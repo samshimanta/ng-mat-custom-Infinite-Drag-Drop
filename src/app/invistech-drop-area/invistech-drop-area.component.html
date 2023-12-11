@@ -1,0 +1,26 @@
+
+
+
+<div cdkDropList class="drop-area" (drop)="dropMethod()" [id]="'1'"  (cdkDropListDropped)="drop($event)" >
+    <p>invistech-drop-area works!</p>
+    <ng-container *ngFor="let item of droppedData">
+    {{item}}
+    </ng-container>
+</div>
+
+<!-- <div cdkDropList class="drop-area" (drop)="dropMethod()" [id]="'1'"  [cdkDropListData]="droppedData"  (cdkDropListDropped)="drop($event)">
+    <p>invistech-drop-area works!</p>
+    <ng-container *ngFor="let item of droppedData">
+    {{item}}
+    </ng-container>
+</div> -->
+
+<!-- <div
+ cdkDrop
+#new="cdkDrop"
+ [cdkDropData]="newItems"
+ [cdkDropConnectedTo]="[active]"
+ (cdkDropDropped)="drop($event)"
+>
+<div *ngFor="let item of newItems" cdkDrag>{{ item }}</div>
+</div> -->

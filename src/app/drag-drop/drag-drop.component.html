@@ -1,0 +1,58 @@
+<!-- <div cdkDropListGroup>
+    <app-cell-wrapper>
+        <app-cell [todo]="todo">
+            <app-cell [todo]="todo1"></app-cell>
+        </app-cell>
+    </app-cell-wrapper>
+  </div> -->
+  <div class="example-container" >
+    <h1>Inventory</h1>
+  </div>
+  <div >
+    <div class="root example-container drop-area" cdkDropList [id]="root.uId" [cdkDropListData]="root.children" 
+    (cdkDropListDropped)="onDragDrop($event)" [cdkDropListConnectedTo]="connectedTo" (cdkDropListEntered)="testcdkDropListEntered($event)" >
+      <ng-container *ngFor="let item of root.children" class="list">
+        <app-cell [item]="item" [connectedTo]="connectedTo" (itemDrop)="onDragDrop($event)" ></app-cell>
+       
+      </ng-container>
+
+
+      <div class="drop-area">
+        <h1>Add </h1>
+   
+          <input [(ngModel)]="inputData" placeholder="Type something..." />
+          <button (click)="addItem($event)">Add Item</button>
+
+      </div>
+    </div>
+  
+  
+    <div class="root_2 example-container drop-area" cdkDropList [id]="root_2.uId" [cdkDropListData]="root_2.children" 
+    (cdkDropListDropped)="onDragDrop($event)" cdkDropListOrientation='horizontal' [cdkDropListConnectedTo]="connectedTo" >
+      <ng-container *ngFor="let item of root_2.children">
+        <app-cell [item]="item" [connectedTo]="connectedTo" (itemDrop)="onDragDrop($event)">
+        </app-cell>
+      </ng-container>
+    </div>
+    <!-- ['4', '3', '2', '1', '-1', '14', '13', '12', '11', '10', '-2'] -->
+
+
+    <!-- <div class="drop-area" cdkDropList  [id]="root.uId"  (cdkDropListDropped)="onDragDrop($event)"  
+    (cdkDropListDropped)="onDragDrop($event)"  [cdkDropListConnectedTo]="connectedTo">
+      <h2>Todos</h2>
+      <ng-container *ngFor="let item of root.children">
+        <app-cell [item]="item" [connectedTo]="connectedTo" (itemDrop)="onDragDrop($event)">
+        </app-cell>
+      </ng-container>
+    </div> -->
+  </div>
+
+
+
+  <div class="example-container" cdkDropList >
+
+  </div>
+
+
+ 
+

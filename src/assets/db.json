@@ -1,0 +1,22 @@
+ [
+    {
+        "name":"Potato",
+        "price":"10$",
+        "offer":"25%"
+    },
+    {
+        "name":"Potato1",
+        "price":"101$",
+        "offer":"251%"
+    },
+    {
+        "name":"Potato2",
+        "price":"102$",
+        "offer":"252%"
+    },
+    {
+        "name":"Potato3",
+        "price":"103$",
+        "offer":"253%"
+    }
+]
