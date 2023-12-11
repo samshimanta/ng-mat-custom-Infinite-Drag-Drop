@@ -1,3 +1,8 @@
+#preview Image
+
+![screenshot-2023-12-11-15-49-13](https://github.com/samshimanta/ng-mat-custom-Infinite-Drag-Drop/assets/77462745/0c6ce8e7-11eb-49a5-9948-70f26b13b127)
+
+
 # Inventory
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
@@ -5,6 +10,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
 
 ## Code scaffolding
 
